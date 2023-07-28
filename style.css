@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--background-primary: hsl(233, 47%, 7%);
+	--background-secondary: hsl(244, 38%, 16%);
+	--detail-span: hsl(277, 64%, 61%);
+	--color-heading-Stats: hsl(0, 0%, 100%);
+	--color-mainParagraph: hsla(0, 0%, 100%, 0.75);
+	--color-statHeadings: hsla(0, 0%, 100%, 0.6);
+	--font-size: 0.9375rem;
+	--font-family-title: 'Lexend Deca', sans-serif;
+	--font-family-p: 'Inter', sans-serif;
+}
+
+body {
+	background: var(--background-primary);
+}
+
+main {
+	background: var(--background-secondary);
+	border-radius: 8px;
+	margin: 10px;
+}
+
+main div {
+	padding: 10px;
+}
+
+source,
+picture,
+img {
+	display: block;
+	max-width: 100%;
+	border-radius: 8px 8px 0 0;
+}
+
+h1 {
+	font-family: var(--font-family-title);
+	margin-top: 10px;
+	text-align: center;
+	color: var(--color-heading-Stats);
+}
+
+h1 span {
+	color: var(--detail-span);
+	font-family: var(--font-family-title);
+}
+
+p {
+	color: var(--color-mainParagraph);
+	font-size: var(--font-size);
+	font-family: var(--font-family-p);
+	text-align: center;
+	margin: 20px 0;
+}
+
+.stats p {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+	color: var(--color-mainParagraph);
+	letter-spacing: 2px;
+}
+
+.stats p span {
+	font-family: var(--font-family-p);
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: var(--color-heading-Stats);
+}
+
+.attribution {
+	color: var(--color-heading-Stats);
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
